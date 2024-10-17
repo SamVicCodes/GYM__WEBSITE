@@ -1,0 +1,79 @@
+.contact .icon-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.contact .icon-links li a {
+  font-size: 3rem;
+  background: var(--color-primary);
+  padding: 3rem;
+  border: 2px solid transparent;
+  border-radius: 0.6rem;
+  transition: var(--transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .icon-links li a svg {
+  color: var(--color-gray-600);
+  transition: var(--transition);
+}
+
+.contact .icon-links li a:hover {
+  background: transparent;
+  border-color: var(--color-gray-100);
+  color: var(--color-gray-100);
+}
+
+.contact .icon-links li a:hover svg {
+  color: var(--color-gray-100);
+}
+
+@media screen and (max-width: 800px) {
+  .contact .icon-links li a {
+    padding: 2rem;
+
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .contact .icon-links li a {
+    padding: 1rem;
+
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact .icon-links {
+    gap: 1rem;
+  }
+  .contact .icon-links li a {
+    padding: 1rem;
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .contact .icon-links li a {
+    padding: .6rem;
+
+  }
+}
+
+@media screen and (max-width: 350px) {
+
+  .contact .icon-links li a {
+    padding: .2rem;
+
+  }
+}
