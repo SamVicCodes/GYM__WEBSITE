@@ -75,6 +75,7 @@ const Footer = () => {
               <li>
                 <a href="/plans">Plans</a>
               </li>
+              
               <li>
                 <a href="/trainers">Trainers</a>
               </li>

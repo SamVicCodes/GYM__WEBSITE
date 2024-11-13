@@ -45,3 +45,9 @@
     margin-inline: auto;
   }
 }
+
+@media screen and (max-width: 370px) {
+ .plans .plans_container .plans_btn {
+    padding: 1rem;
+  }
+}

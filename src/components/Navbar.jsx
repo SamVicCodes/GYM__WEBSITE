@@ -1,15 +1,34 @@
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+import { IoCloseSharp } from "react-icons/io5";
 import logo from "../images/logo.png";
 import { links } from "../data";
-import { FaBars } from "react-icons/fa";
-import { useState } from "react";
-import { IoCloseSharp } from "react-icons/io5";
 
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
 
+  // Close the nav menu when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const navContainer = document.querySelector(".nav-container");
+      
+      // If the click was outside the nav container, close the menu
+      if (navContainer && !navContainer.contains(event.target)) {
+        setIsNavShowing(false);
+      }
+    };
+
+    // Add event listener to detect clicks outside of nav
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Clean up event listener on component unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav>
@@ -24,7 +43,7 @@ const Navbar = () => {
               <NavLink
                 to={path}
                 className={({ isActive }) => (isActive ? "nav-active" : "")}
-                onClick={() => setIsNavShowing((prev) => !prev)} // Close the nav menu on click
+                onClick={() => setIsNavShowing(false)} // Close the nav menu on link click
               >
                 {name}
               </NavLink>
