@@ -8,9 +8,9 @@
   text-decoration: none;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0;
-}
+} */
 
 :root {
   /* --primary-hue: 20;

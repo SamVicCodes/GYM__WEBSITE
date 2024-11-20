@@ -42,15 +42,22 @@ const Gallery = () => {
     <div className="about">
       <div className="about_container">
         <Header image={galleryImage} title="Our Gallery">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          saepe praesentium, nisi aspernatur ipsam veniam. Facilis, aut.
-          Praesentium, itaque dolorum.
+          Welcome to our gallery! Here, you can explore a collection of images
+          that showcase the essence of our work, the creativity behind our
+          projects, and the moments that define us. Dive in and discover the
+          story behind each picture.
         </Header>
 
         <section>
           <div className="container gallery_container">
             {images.map((image, index) => {
-              return <img src={image} key={index} alt={`gallery image ${index + 1}`} />;
+              return (
+                <img
+                  src={image}
+                  key={index}
+                  alt={`gallery image ${index + 1}`}
+                />
+              );
             })}
           </div>
         </section>

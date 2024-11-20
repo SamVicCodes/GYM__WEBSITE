@@ -9,33 +9,27 @@ const Values = () => {
   return (
     <section className="values">
       <div className="container values_container">
-        {/*  */}
-
+        {/* Left Section with Image */}
         <div className="values_left">
-          <img src={image} alt="values image" />
+          <img src={image} alt="Gym values representation" />
         </div>
 
+        {/* Right Section with Values */}
         <div className="values_right">
-          <SectionHead icon={<GiCutDiamond />} title="Our Values" />
+          <SectionHead icon={<GiCutDiamond />} title="Our Core Values" />
 
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            temporibus, natus nihil delectus corrupti rerum.
+            At our gym, we stand by a set of core values that drive everything we do. From empowering our members to fostering a community of wellness, these values shape your fitness journey.
           </p>
 
           <div className="values_wrapper">
             {values.map((value) => {
-              
               const { id, icon, title, desc } = value;
 
               return (
                 <Card className="value" key={id}>
-                  <span>
-                    {icon}
-                  </span>
-
+                  <span>{icon}</span>
                   <h4>{title}</h4>
-
                   <small>{desc}</small>
                 </Card>
               );
@@ -48,3 +42,4 @@ const Values = () => {
 };
 
 export default Values;
+

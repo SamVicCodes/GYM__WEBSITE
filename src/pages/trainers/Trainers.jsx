@@ -6,15 +6,14 @@ import { trainers } from "./../../data";
 import Card from "../../Card";
 import { Link } from "react-router-dom";
 
-
 const Trainers = () => {
   return (
     <div className="trainers">
       <div className="trainers_container">
         <Header image={plansImage} title="Our Trainers">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          saepe praesentium, nisi aspernatur ipsam veniam. Facilis, aut.
-          Praesentium, itaque dolorum.
+          Meet our team of professional trainers, each dedicated to helping you
+          achieve your fitness goals. Whether you're a beginner or experienced,
+          our trainers provide personalized guidance to ensure your success.
         </Header>
 
         <section className="trainers_wrapper container">
@@ -35,7 +34,6 @@ const Trainers = () => {
 
                 <div className="trainer_socials">
                   {socials.map(({ icon, link }, index) => {
-
                     return (
                       <Link
                         key={index}

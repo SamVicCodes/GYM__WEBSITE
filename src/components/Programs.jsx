@@ -10,7 +10,7 @@ const Programs = () => {
   return (
     <section className="programs">
       <div className="container programs_container">
-        <SectionHead icon={<FaCrown />} title="Programs" />
+        <SectionHead icon={<FaCrown />} title="Our Programs" />
 
         <div className="programs_wrapper">
           {programs.map((program) => {
@@ -18,7 +18,7 @@ const Programs = () => {
 
             return (
               <Card key={id} className="program">
-                <span>{icon}</span> 
+                <span>{icon}</span>
 
                 <h4>{title}</h4>
 
@@ -37,3 +37,5 @@ const Programs = () => {
 };
 
 export default Programs;
+
+

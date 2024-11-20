@@ -7,12 +7,12 @@ const MainHeader = () => {
         <div className="header_left">
           <small>#100DaysOfWorkOut</small>
 
-          <h2>join the legend of the fitness world</h2>
+          <h2>Transform Your Body, Transform Your Life</h2>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum
-            repellat repellendus veniam qui, deleniti itaque a consequatur iusto
-            quo.
+            Join our community of fitness enthusiasts and achieve your goals
+            with expert trainers, world-class facilities, and tailored workout
+            plans designed just for you.
           </p>
 
           <button className="btn lg">Get Started</button>
@@ -22,7 +22,7 @@ const MainHeader = () => {
           <div className="header_circle"></div>
 
           <div className="avatar">
-            <img src={headerImage} alt="" />
+            <img src={headerImage} alt="Fitness Enthusiast" />
           </div>
         </div>
       </div>

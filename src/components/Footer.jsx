@@ -15,8 +15,7 @@ const Footer = () => {
             <h4>SAMVIC CODES</h4>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-              obcaecati a provident magni aspernatur velit?
+            Passionate about building dynamic and responsive websites, bringing ideas to life with code, and empowering businesses digitally.
             </p>
 
             <ul className="links icon-links">

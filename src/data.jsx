@@ -25,103 +25,111 @@ export const links = [
   { name: "Contact", path: "/contact" },
 ];
 
+// Updated programs data
 export const programs = [
   {
     id: 1,
-    icon: <SiOpenaigym />, // Referencing the icon function directly
-    title: "Program One",
-    info: "This is the day that the lord has made. We will rejoice!",
-    path: "/programs/111",
+    icon: <SiOpenaigym />,
+    title: "Strength Training",
+    info: "Build muscle and improve your strength with our guided weightlifting training programs.",
+    path: "/",
   },
   {
     id: 2,
     icon: <SiOpenaigym />,
-    title: "Program Two",
-    info: "This is the day that the lord has made. We will rejoice!",
-    path: "/programs/222",
+    title: "Cardio Workouts",
+    info: "Boost your endurance and burn calories with high-energy cardio sessions for all fitness levels.",
+    path: "/",
   },
   {
     id: 3,
     icon: <SiOpenaigym />,
-    title: "Program Three",
-    info: "This is the day that the lord has made. We will rejoice!",
-    path: "/programs/333",
+    title: "Yoga & Flexibility",
+    info: "Enhance your flexibility and find your inner peace with our expert-led yoga and stretching classes.",
+    path: "/",
   },
   {
     id: 4,
     icon: <SiOpenaigym />,
-    title: "Program Four",
-    info: "This is the day that the lord has made. We will rejoice!",
-    path: "/programs/444",
+    title: "Personal Training",
+    info: "Achieve your fitness goals faster with one-on-one coaching from our certified personal trainers.",
+    path: "/",
   },
 ];
 
+// Updated values data
 export const values = [
   {
     id: 1,
     icon: <SiOpenaigym />,
-    title: "Value One",
-    desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum.",
+    title: "Commitment to Excellence",
+    desc: "We strive to provide the highest quality facilities, equipment, and training programs to help you achieve your fitness goals.",
   },
   {
     id: 2,
     icon: <SiOpenaigym />,
-    title: "Value Two",
-    desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum.",
+    title: "Community and Support",
+    desc: "We believe in fostering a supportive and inclusive community where everyone feels empowered to succeed.",
   },
   {
     id: 3,
     icon: <SiOpenaigym />,
-    title: "Value Three",
-    desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum.",
+    title: "Continuous Improvement",
+    desc: "We embrace innovation and constantly improve our services to ensure our members stay ahead in their fitness journeys.",
   },
   {
     id: 4,
     icon: <SiOpenaigym />,
-    title: "Value Four",
-    desc: "Placeat quidem facere dicta modi? Pariatur exercitationem illum.",
+    title: "Passion for Wellness",
+    desc: "Our passion for fitness drives us to inspire and motivate every member to live a healthier, happier life.",
   },
 ];
+
 
 export const faqs = [
   {
     id: 1,
     question: "How often should I exercise?",
-    answer: "Consectetur adipisicing elit. Non ipsa dolorem...",
+    answer:
+      "It depends on your fitness goals. For general health, aim for at least 30 minutes of moderate exercise 5 days a week. For muscle building or weight loss, a combination of strength training and cardio 4-6 days a week is recommended.",
   },
   {
     id: 2,
     question: "What time of day is best to work out?",
-    answer: "Distinctio nihil blanditiis accusantium atque...",
+    answer:
+      "The best time to work out is when you feel most energized and can be consistent. Some people prefer morning workouts for a fresh start, while others perform better in the evening. Choose what works best for your schedule.",
   },
   {
     id: 3,
     question: "How long should my workouts be?",
-    answer: "In publishing and graphic design, Lorem ipsum...",
+    answer:
+      "Workouts should last between 30 to 60 minutes, depending on the intensity and type of exercise. Shorter, high-intensity sessions can be just as effective as longer workouts for certain goals.",
   },
   {
     id: 4,
     question: "Do I need to warm up before my workouts?",
-    answer: "Molestiae quidem ab soluta exercitationem culpa...",
+    answer:
+      "Yes! Warming up prepares your body for exercise by increasing blood flow and reducing the risk of injury. A 5-10 minute dynamic warm-up with stretches is ideal.",
   },
   {
     id: 5,
-    question: "Should I do strength training, cardio or both?",
-    answer: "Maiores fuga, cum praesentium esse laudantium...",
+    question: "Should I do strength training, cardio, or both?",
+    answer:
+      "Both! Strength training builds muscle and improves metabolism, while cardio enhances heart health and burns calories. A balanced routine ensures you achieve overall fitness.",
   },
   {
     id: 6,
     question: "Should I lift weights for strength training?",
-    answer: "Quas, est at! Molestiae quidem ab soluta exercitationem...",
+    answer:
+      "Absolutely! Lifting weights helps build muscle, improve bone density, and boost metabolism. Start with lighter weights and focus on proper form before progressing to heavier loads.",
   },
 ];
-
 export const testimonials = [
   {
     id: 1,
     name: "Diana Ayi",
     quote:
-      "Lorem ipsum dolor sit amet co qui in. Necessitatinsectetur adipisicing elit. Sit animi odit voluptate sed. Ducimus ipsa quisquam, vero ut ea assumenda, maxime necessitatibus magnam quo libero officia adibus nobis suscipit est nihil voluptatibus...",
+      "Working with this team was a delight. Their professionalism and dedication to delivering quality results were outstanding!",
     avatar: avatar1,
     job: "Software Developer",
   },
@@ -129,33 +137,33 @@ export const testimonials = [
     id: 2,
     name: "Daniel Vinyo",
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi odit voluptate sed. Ducimus ipsa quisquam, vero ut ea assumenda, maxime necessitatibus magnam quo libero officia adipisci aperiam!....",
-    job: "Software Engineer",
+      "This service exceeded my expectations. The attention to detail and creativity were truly impressive.",
     avatar: avatar2,
+    job: "Software Engineer",
   },
   {
     id: 3,
     name: "Edem Quist",
     quote:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora voluptates natus numquam qui in. Necessitatibus nobis suscipit est nihil voluptatibus....",
-    job: "University Lecturer",
+      "A top-notch experience from start to finish! I would highly recommend this to anyone looking for excellence.",
     avatar: avatar3,
+    job: "University Lecturer",
   },
   {
     id: 4,
     name: "Grace Lavoe",
     quote:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora voluptates natus numquam qui in. Necessitatibus nobis suscipit est nihil voluptatibus....",
-    job: "Talking Parrot",
+      "They understood my needs perfectly and delivered beyond my expectations. Absolutely fantastic!",
     avatar: avatar4,
+    job: "Marketing Specialist",
   },
   {
     id: 5,
     name: "Nana Yaa Dankwa",
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit animi odit voluptate sed. Ducimus ipsa quisquam, vero ut ea assumenda, maxime necessitatibus magnam quo libero officia adipisci aperiam!....",
-    job: "Pharmacist",
+      "A seamless experience. Their innovative approach and commitment to quality were truly remarkable.",
     avatar: avatar5,
+    job: "Pharmacist",
   },
 ];
 
@@ -205,7 +213,7 @@ export const plans = [
   {
     id: 3,
     name: "Platinum Package",
-    desc: "This is the perfect package for beginners who know what they're doing",
+    desc: "This package is perfect for beginners with experience.",
     price: 89.99,
     features: [
       { feature: "First Feature", available: true },

@@ -15,6 +15,7 @@ const Navbar = () => {
     const handleClickOutside = (event) => {
       const navContainer = document.querySelector(".nav-container");
       
+
       // If the click was outside the nav container, close the menu
       if (navContainer && !navContainer.contains(event.target)) {
         setIsNavShowing(false);
@@ -29,6 +30,7 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
 
   return (
     <nav>

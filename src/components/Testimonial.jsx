@@ -9,22 +9,14 @@ import { BsArrowLeftCircle } from "react-icons/bs";
 
 const Testimonial = () => {
   const [index, setIndex] = useState(0);
-  const { id, name, quote, job, avatar } = testimonials[index];
+  const { name, quote, job, avatar } = testimonials[index];
 
   const setNextTestimonial = () => {
-    setIndex((prev) => prev + 1);
-
-    if (index >= testimonials.length - 1) {
-      setIndex(0);
-    }
+    setIndex((prev) => (prev + 1) % testimonials.length);
   };
 
   const setPrevTestimonial = () => {
-    setIndex((prev) => prev - 1);
-
-    if (index <= 0) {
-      setIndex(testimonials.length - 1);
-    }
+    setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
   return (
@@ -32,13 +24,13 @@ const Testimonial = () => {
       <div className="container testimonial_container">
         <SectionHead
           icon={<ImQuotesLeft />}
-          title="Testimonial"
+          title="Testimonials"
           className="testimonial_head"
         />
 
         <div className="testimonial_wrapper">
-          <Card className="testimonial" key={id}>
-            <img src={avatar} alt="testimonial image" />
+          <Card className="testimonial">
+            <img src={avatar} alt={`${name}'s avatar`} />
 
             <p>{`"${quote}"`}</p>
 
@@ -51,14 +43,16 @@ const Testimonial = () => {
             <button
               className="testimonials_btn_left"
               onClick={setPrevTestimonial}
+              aria-label="Previous Testimonial"
             >
-              {<BsArrowLeftCircle />}
+              <BsArrowLeftCircle />
             </button>
             <button
               className="testimonials_btn_right"
               onClick={setNextTestimonial}
+              aria-label="Next Testimonial"
             >
-              {<BsArrowRightCircle />}
+              <BsArrowRightCircle />
             </button>
           </div>
         </div>

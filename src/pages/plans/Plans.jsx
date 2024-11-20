@@ -10,9 +10,11 @@ const Plans = () => {
     <div className="about">
       <div className="about_container">
         <Header image={plansImage} title="Membership Plan">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-          saepe praesentium, nisi aspernatur ipsam veniam. Facilis, aut.
-          Praesentium, itaque dolorum.
+          Explore our flexible membership plans tailored to suit your needs.
+          Whether you're looking for basic access or premium features, we offer
+          options designed to help you get the most out of our services. Choose
+          the plan that works best for you and start enjoying the benefits
+          today!
         </Header>
 
         <section className="plans">
