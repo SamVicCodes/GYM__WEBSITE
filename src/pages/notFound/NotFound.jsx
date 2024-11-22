@@ -1,9 +1,14 @@
-import "./notFound.css"
+import "./notFound.css";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
-    <div>NotFound</div>
-  )
-}
+    <section className="notfound">
+      <h2>PAGE NOT FOUND</h2>
 
-export default NotFound
+      <Link to="/" className="btn lg ">Go Home</Link>
+    </section>
+  );
+};
+
+export default NotFound;

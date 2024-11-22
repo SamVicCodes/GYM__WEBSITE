@@ -14,7 +14,6 @@ const Navbar = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       const navContainer = document.querySelector(".nav-container");
-      
 
       // If the click was outside the nav container, close the menu
       if (navContainer && !navContainer.contains(event.target)) {
@@ -31,12 +30,11 @@ const Navbar = () => {
     };
   }, []);
 
-
   return (
     <nav>
       <div className="container nav-container">
         <Link to="/" className="logo" onClick={() => setIsNavShowing(false)}>
-          <img src={logo} alt="Nav Logo" className="logo" />
+          <h3>SAMVIC CODES</h3>
         </Link>
 
         <ul className={`nav-links ${isNavShowing ? "show-nav" : "hide-nav"}`}>

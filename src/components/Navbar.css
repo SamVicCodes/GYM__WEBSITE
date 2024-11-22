@@ -25,9 +25,8 @@ nav {
   gap: 3rem;
 }
 
-.logo {
-  width: 7rem;
-  display: block;
+.logo h3 {
+  font-size: 1.5rem;
 }
 
 .nav-links a {
@@ -75,7 +74,7 @@ nav {
     top: 100%;
     right: 0;
     gap: 0;
-    perspective: 400px;  /* read on dis */
+    perspective: 400px; /* read on dis */
   }
 
   .nav-active::after {
@@ -147,5 +146,11 @@ nav {
       transform: rotateX(0); /* Rotate back to normal position */
       opacity: 1; /* Make visible */
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo h3 {
+    font-size: 1.3rem;
   }
 }
