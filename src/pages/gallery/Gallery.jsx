@@ -17,8 +17,15 @@ import galleryImage12 from "../../images/gallery12.jpg";
 import galleryImage13 from "../../images/gallery13.jpg";
 import galleryImage14 from "../../images/gallery14.jpg";
 import galleryImage15 from "../../images/gallery15.jpg";
+import { useEffect } from "react";
+
 
 const Gallery = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
+  
   // Create an array of all the imported images
   const images = [
     galleryImage1,

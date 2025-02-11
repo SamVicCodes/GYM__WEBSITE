@@ -4,8 +4,15 @@ import plansImage from "../../images/header_bg_4.jpg";
 import { plans } from "../../data";
 import Card from "../../Card";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+
 
 const Plans = () => {
+   useEffect(() => {
+      window.scroll(0, 0);
+    }, []);
+
+
   return (
     <div className="about">
       <div className="about_container">

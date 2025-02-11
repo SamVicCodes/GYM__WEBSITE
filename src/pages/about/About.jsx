@@ -4,8 +4,14 @@ import aboutImage from "../../images/header_bg_1.jpg";
 import storyImage from "../../images/about1.jpg";
 import visionImage from "../../images/about2.jpg";
 import missionImage from "../../images/about3.jpg";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
+  
   return (
     <div className="about">
       <div className="about_container">

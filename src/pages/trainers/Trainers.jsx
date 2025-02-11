@@ -5,8 +5,15 @@ import plansImage from "../../images/header_bg_5.jpg";
 import { trainers } from "./../../data";
 import Card from "../../Card";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+
 
 const Trainers = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
+
   return (
     <div className="trainers">
       <div className="trainers_container">

@@ -6,7 +6,16 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
+import { useEffect } from "react";
+
+
+
 const Contact = () => {
+    useEffect(() => {
+      window.scroll(0, 0);
+    }, []);
+
+
   return (
     <div className="about">
       <div className="about_container">

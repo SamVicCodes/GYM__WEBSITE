@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
-import logo from "../images/logo.png";
 import { links } from "../data";
 
 import "./Navbar.css";
+
+
 
 const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
